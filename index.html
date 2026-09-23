@@ -1,216 +1,970 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Point do Lanche</title>
-  <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FintechX | Controle Financeiro</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
 </head>
+
 
 <body>
 
-  <!-- CABEÇALHO -->
-  <header>
-    <div class="header-content">
-      <div class="logo">🍔 Point do Lanche</div>
+    <!-- FUNDO DECORATIVO -->
 
-      <button class="cart-button" onclick="abrirCarrinho()">
-        🛒 Carrinho (<span id="cartCount">0</span>)
-      </button>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+
+    <!-- APLICAÇÃO -->
+
+    <div class="app">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    $
+                </div>
+
+                <div>
+                    <strong>FINTECH</strong>
+                    <span>X</span>
+                </div>
+
+            </div>
+
+
+            <div class="menu-title">
+                MENU PRINCIPAL
+            </div>
+
+
+            <nav class="menu">
+
+                <a href="#" class="menu-item active">
+                    <span class="menu-icon">⌂</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">↗</span>
+                    Receitas
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">↘</span>
+                    Despesas
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">◈</span>
+                    Contas
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">▤</span>
+                    Relatórios
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">◉</span>
+                    Empresas
+                </a>
+
+            </nav>
+
+
+            <div class="menu-title settings-title">
+                SISTEMA
+            </div>
+
+
+            <nav class="menu">
+
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">⚙</span>
+                    Configurações
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">?</span>
+                    Ajuda
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="user">
+
+                    <div class="user-avatar">
+                        GC
+                    </div>
+
+                    <div class="user-info">
+
+                        <strong>
+                            Guilherme Costa
+                        </strong>
+
+                        <span>
+                            Administrador
+                        </span>
+
+                    </div>
+
+                    <button type="button">
+                        ⋮
+                    </button>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+
+        <main class="main">
+
+
+            <!-- HEADER -->
+
+            <header class="header">
+
+                <div>
+
+                    <span class="header-small">
+                        VISÃO GERAL
+                    </span>
+
+                    <h1>
+                        Controle Financeiro
+                    </h1>
+
+                    <p>
+                        Acompanhe a saúde financeira da sua empresa.
+                    </p>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <button
+                        type="button"
+                        class="header-button"
+                    >
+
+                        🔔
+
+                        <span class="notification"></span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="period-button"
+                    >
+
+                        📅
+
+                        Setembro 2026
+
+                        <span>
+                            ▾
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- CARDS FINANCEIROS -->
+
+            <section class="cards">
+
+
+                <!-- RECEITA -->
+
+                <div class="finance-card">
+
+                    <div class="finance-card-top">
+
+                        <div class="finance-icon income-icon">
+                            ↗
+                        </div>
+
+                        <span class="growth">
+                            +12,8%
+                        </span>
+
+                    </div>
+
+                    <span class="card-label">
+                        RECEITA TOTAL
+                    </span>
+
+                    <h2 id="receita">
+                        R$ 128.450,00
+                    </h2>
+
+                    <span class="card-footer">
+                        ↑ R$ 14.520 este mês
+                    </span>
+
+                </div>
+
+
+
+                <!-- DESPESAS -->
+
+                <div class="finance-card">
+
+                    <div class="finance-card-top">
+
+                        <div class="finance-icon expense-icon">
+                            ↘
+                        </div>
+
+                        <span class="expense-growth">
+                            +4,2%
+                        </span>
+
+                    </div>
+
+                    <span class="card-label">
+                        DESPESAS
+                    </span>
+
+                    <h2 id="despesa">
+                        R$ 52.380,00
+                    </h2>
+
+                    <span class="card-footer">
+                        ↑ R$ 2.130 este mês
+                    </span>
+
+                </div>
+
+
+
+                <!-- SALDO -->
+
+                <div class="finance-card featured">
+
+                    <div class="finance-card-top">
+
+                        <div class="finance-icon balance-icon">
+                            $
+                        </div>
+
+                        <span class="growth">
+                            +18,6%
+                        </span>
+
+                    </div>
+
+                    <span class="card-label">
+                        SALDO DISPONÍVEL
+                    </span>
+
+                    <h2 id="saldo">
+                        R$ 76.070,00
+                    </h2>
+
+                    <span class="card-footer">
+                        Saldo atualizado agora
+                    </span>
+
+                </div>
+
+
+
+                <!-- LUCRO -->
+
+                <div class="finance-card">
+
+                    <div class="finance-card-top">
+
+                        <div class="finance-icon profit-icon">
+                            ◉
+                        </div>
+
+                        <span class="growth">
+                            72,4%
+                        </span>
+
+                    </div>
+
+                    <span class="card-label">
+                        MARGEM DE LUCRO
+                    </span>
+
+                    <h2>
+                        59,2%
+                    </h2>
+
+                    <span class="card-footer">
+                        ↑ 6,4% comparado ao mês anterior
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- GRÁFICOS -->
+
+            <section class="dashboard-grid">
+
+
+                <!-- FLUXO FINANCEIRO -->
+
+                <div class="panel large-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span>
+                                PERFORMANCE
+                            </span>
+
+                            <h3>
+                                Fluxo Financeiro
+                            </h3>
+
+                        </div>
+
+
+                        <select id="period">
+
+                            <option value="7">
+                                Últimos 7 meses
+                            </option>
+
+                            <option value="6">
+                                Últimos 6 meses
+                            </option>
+
+                            <option value="12">
+                                Últimos 12 meses
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="fake-chart">
+
+                        <div class="chart-line"></div>
+
+
+                        <div class="chart-bars">
+
+                            <div>
+                                <i style="height:45%"></i>
+                                <b style="height:25%"></b>
+                                <span>Mar</span>
+                            </div>
+
+                            <div>
+                                <i style="height:57%"></i>
+                                <b style="height:31%"></b>
+                                <span>Abr</span>
+                            </div>
+
+                            <div>
+                                <i style="height:53%"></i>
+                                <b style="height:28%"></b>
+                                <span>Mai</span>
+                            </div>
+
+                            <div>
+                                <i style="height:69%"></i>
+                                <b style="height:35%"></b>
+                                <span>Jun</span>
+                            </div>
+
+                            <div>
+                                <i style="height:76%"></i>
+                                <b style="height:41%"></b>
+                                <span>Jul</span>
+                            </div>
+
+                            <div>
+                                <i style="height:86%"></i>
+                                <b style="height:46%"></b>
+                                <span>Ago</span>
+                            </div>
+
+                            <div>
+                                <i style="height:94%"></i>
+                                <b style="height:51%"></b>
+                                <span>Set</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-legends">
+
+                        <span>
+                            <i class="green-dot"></i>
+                            Receitas
+                        </span>
+
+                        <span>
+                            <i class="red-dot"></i>
+                            Despesas
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DISTRIBUIÇÃO DE DESPESAS -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span>
+                                DISTRIBUIÇÃO
+                            </span>
+
+                            <h3>
+                                Despesas
+                            </h3>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="dots"
+                        >
+                            •••
+                        </button>
+
+                    </div>
+
+
+                    <div class="donut-container">
+
+                        <div class="donut">
+
+                            <div>
+
+                                <strong>
+                                    R$ 52,3K
+                                </strong>
+
+                                <span>
+                                    Total
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="distribution-list">
+
+                        <div>
+
+                            <span>
+                                <i class="dot green"></i>
+                                Marketing
+                            </span>
+
+                            <strong>
+                                32%
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                <i class="dot blue"></i>
+                                Pessoal
+                            </span>
+
+                            <strong>
+                                28%
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                <i class="dot purple"></i>
+                                Operacional
+                            </span>
+
+                            <strong>
+                                24%
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                <i class="dot red"></i>
+                                Outros
+                            </span>
+
+                            <strong>
+                                16%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- TRANSAÇÕES -->
+
+            <section class="panel transactions-panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span>
+                            MOVIMENTAÇÕES
+                        </span>
+
+                        <h3>
+                            Transações Recentes
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="new-transaction"
+                        id="openModal"
+                    >
+
+                        +
+
+                        Nova transação
+
+                    </button>
+
+                </div>
+
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    DESCRIÇÃO
+                                </th>
+
+                                <th>
+                                    CATEGORIA
+                                </th>
+
+                                <th>
+                                    DATA
+                                </th>
+
+                                <th>
+                                    STATUS
+                                </th>
+
+                                <th>
+                                    VALOR
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="transactionList">
+
+
+                            <!-- TRANSAÇÃO 1 -->
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="transaction-name">
+
+                                        <div class="transaction-symbol income-symbol">
+                                            ↗
+                                        </div>
+
+                                        Venda de produtos
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Vendas
+                                </td>
+
+                                <td>
+                                    23/09/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Concluído
+                                    </span>
+
+                                </td>
+
+                                <td class="value income-value">
+                                    + R$ 8.450,00
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- TRANSAÇÃO 2 -->
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="transaction-name">
+
+                                        <div class="transaction-symbol expense-symbol">
+                                            ↘
+                                        </div>
+
+                                        Fornecedores
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Operacional
+                                </td>
+
+                                <td>
+                                    22/09/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Concluído
+                                    </span>
+
+                                </td>
+
+                                <td class="value expense-value">
+                                    - R$ 4.280,00
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- TRANSAÇÃO 3 -->
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="transaction-name">
+
+                                        <div class="transaction-symbol purple-symbol">
+                                            $
+                                        </div>
+
+                                        Campanha Google Ads
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Marketing
+                                </td>
+
+                                <td>
+                                    21/09/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        Pendente
+                                    </span>
+
+                                </td>
+
+                                <td class="value expense-value">
+                                    - R$ 1.850,00
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- TRANSAÇÃO 4 -->
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="transaction-name">
+
+                                        <div class="transaction-symbol blue-symbol">
+                                            $
+                                        </div>
+
+                                        Folha de pagamento
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Pessoal
+                                </td>
+
+                                <td>
+                                    20/09/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Concluído
+                                    </span>
+
+                                </td>
+
+                                <td class="value expense-value">
+                                    - R$ 18.900,00
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
     </div>
 
-  </header>
 
-  <!-- BANNER -->
-  <section class="hero">
-    <h1>🍔 Point do Lanche</h1>
-    <p>Seu lanche favorito na palma da mão!</p>
-  </section>
 
-  <main class="container">
+    <!-- MODAL DE NOVA TRANSAÇÃO -->
 
-    <!-- BUSCA -->
-    <input
-      type="text"
-      id="search"
-      class="search"
-      placeholder="🔎 Procurar lanche..."
-      oninput="renderProdutos()"
+    <div
+        class="modal-overlay"
+        id="modal"
     >
 
-    <!-- CATEGORIAS -->
-    <div class="categories">
-      <button
-        class="category-btn active"
-        onclick="selecionarCategoria('Todos', this)">
-        Todos
-      </button>
-
-      <button
-        class="category-btn"
-        onclick="selecionarCategoria('Hambúrgueres', this)">
-        🍔 Hambúrgueres
-      </button>
-
-      <button
-        class="category-btn"
-        onclick="selecionarCategoria('Hot Dogs', this)">
-        🌭 Hot Dogs
-      </button>
-
-      <button
-        class="category-btn"
-        onclick="selecionarCategoria('Porções', this)">
-        🍟 Porções
-      </button>
-
-      <button
-        class="category-btn"
-        onclick="selecionarCategoria('Bebidas', this)">
-        🥤 Bebidas
-      </button>
-    </div>
-
-    <!-- PRODUTOS -->
-    <div id="products" class="products"></div>
-
-  </main>
-
-  <!-- RODAPÉ -->
-  <footer>
-    <p>© 2026 Point do Lanche</p>
-    <p>Pedidos online • Entrega rápida</p>
-  </footer>
+        <div class="modal">
 
 
-  <!-- MODAL DO CARRINHO -->
-  <div id="cartModal" class="modal">
-
-    <div class="modal-content">
-
-      <button class="close" onclick="fecharCarrinho()">×</button>
-
-      <h2 class="modal-title">🛒 Seu Carrinho</h2>
-
-      <div id="cartItems"></div>
-
-      <div id="cartSummary"></div>
-
-    </div>
-
-  </div>
+            <button
+                type="button"
+                class="close-modal"
+                id="closeModal"
+            >
+                ×
+            </button>
 
 
-  <!-- MODAL FINALIZAÇÃO -->
-  <div id="checkoutModal" class="modal">
+            <span>
+                NOVA MOVIMENTAÇÃO
+            </span>
 
-    <div class="modal-content">
 
-      <button class="close" onclick="fecharCheckout()">×</button>
+            <h2>
+                Adicionar transação
+            </h2>
 
-      <h2 class="modal-title">📋 Finalizar Pedido</h2>
 
-      <div class="form-group">
-        <label>Nome</label>
-        <input
-          type="text"
-          id="clienteNome"
-          placeholder="Digite seu nome"
-        >
-      </div>
+            <p>
+                Registre uma nova receita ou despesa.
+            </p>
 
-      <div class="form-group">
-        <label>Telefone</label>
-        <input
-          type="tel"
-          id="clienteTelefone"
-          placeholder="(85) 99999-9999"
-        >
-      </div>
 
-      <div class="form-group">
-        <label>Endereço</label>
-        <input
-          type="text"
-          id="clienteEndereco"
-          placeholder="Rua, número"
-        >
-      </div>
+            <form id="transactionForm">
 
-      <div class="form-group">
-        <label>Bairro</label>
-        <input
-          type="text"
-          id="clienteBairro"
-          placeholder="Seu bairro"
-        >
-      </div>
 
-      <div class="form-group">
-        <label>Complemento</label>
-        <input
-          type="text"
-          id="clienteComplemento"
-          placeholder="Apartamento, casa, referência..."
-        >
-      </div>
+                <label>
 
-      <div class="form-group">
-        <label>Forma de pagamento</label>
+                    Descrição
 
-        <select id="pagamento">
-          <option value="">Selecione</option>
-          <option value="Pix">Pix</option>
-          <option value="Dinheiro">Dinheiro</option>
-          <option value="Cartão de crédito">Cartão de crédito</option>
-          <option value="Cartão de débito">Cartão de débito</option>
-        </select>
-      </div>
+                    <input
+                        id="description"
+                        type="text"
+                        placeholder="Ex: Venda de produtos"
+                        required
+                    >
 
-      <div
-        id="trocoContainer"
-        class="form-group"
-        style="display:none;"
-      >
-        <label>Troco para quanto?</label>
+                </label>
 
-        <input
-          type="number"
-          id="troco"
-          placeholder="Ex: 50"
-          min="0"
-          step="0.01"
-        >
-      </div>
 
-      <div class="form-group">
-        <label>Observação</label>
 
-        <textarea
-          id="observacao"
-          placeholder="Ex: Sem cebola, pouco molho..."
-        ></textarea>
-      </div>
+                <div class="form-row">
 
-      <div class="delivery-info">
-        🚚 Taxa de entrega: <strong>R$ 5,00</strong>
-      </div>
 
-      <div id="checkoutTotal"></div>
+                    <label>
 
-      <button
-        class="checkout-button"
-        onclick="finalizarPedido()"
-      >
-        📲 Enviar pedido pelo WhatsApp
-      </button>
+                        Tipo
+
+                        <select id="type">
+
+                            <option value="income">
+                                Receita
+                            </option>
+
+                            <option value="expense">
+                                Despesa
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <label>
+
+                        Valor
+
+                        <input
+                            id="amount"
+                            type="number"
+                            step="0.01"
+                            min="0.01"
+                            placeholder="0,00"
+                            required
+                        >
+
+                    </label>
+
+                </div>
+
+
+
+                <label>
+
+                    Categoria
+
+                    <select id="category">
+
+                        <option value="Vendas">
+                            Vendas
+                        </option>
+
+                        <option value="Marketing">
+                            Marketing
+                        </option>
+
+                        <option value="Operacional">
+                            Operacional
+                        </option>
+
+                        <option value="Pessoal">
+                            Pessoal
+                        </option>
+
+                        <option value="Outros">
+                            Outros
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+
+                    Adicionar transação
+
+                </button>
+
+
+            </form>
+
+        </div>
 
     </div>
 
-  </div>
 
-  <script src = "script.js"></script>
 
+    <!-- JAVASCRIPT -->
+
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
